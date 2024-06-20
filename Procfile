@@ -1,2 +1,2 @@
-web: gunicorn GCNA_db.wsgi --bind 0.0.0.0:8000
+web: gunicorn GCNA_db.wsgi --log-file -
 
