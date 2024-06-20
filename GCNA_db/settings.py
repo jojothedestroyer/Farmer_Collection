@@ -27,9 +27,9 @@ SECRET_KEY = 'django-insecure-t97pv)5u0g@zz5jqmx_=t+i#u$f1n=_40ivty73x+57o71h8*z
 DEBUG = True
 
 # ALLOWED_HOSTS = ["192.168.42.50","127.0.0.1",'192.168.1.198','192.168.1.51','192.168.1.161:8000','.vercel.app', '192.168.1.30']
-# ALLOWED_HOSTS = ['*']
-APP_NAME = os.environ.get("FLY_APP_NAME")
-ALLOWED_HOSTS = [f"{APP_NAME}.fly.dev"]
+ALLOWED_HOSTS = ['*']
+# APP_NAME = os.environ.get("FLY_APP_NAME")
+# ALLOWED_HOSTS = [f"{APP_NAME}.fly.dev"]
 
 
 CELERY_BROKER_URL = 'redis://localhost:6379/0'
